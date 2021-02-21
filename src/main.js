@@ -1,10 +1,9 @@
-import MyClass from "./MyClass.js";
+import Queue from "./Queue.js";
 function main(){
-    const classIntance = new class{
-        get prop(){
-            return 5;
-        }
-    }
-    console.log(classIntance.prop);
+    const queue = new Queue();
+    queue.enqueue(1);
+    queue.enqueue(2);
+    queue.enqueue(3);
+    console.log(queue.dequeue());
 }
 main();
