@@ -1,6 +1,7 @@
-import SubClass from "./SubClass.js";
+import MyClass from "./MyClass.js";
 function main(){
-    const subclass = new SubClass();
-    subclass.log();
+    const myClass = new MyClass("option");
+    console.log(MyClass.MyStaticMethod());
+    console.log(MyClass.MyStaticProperty);
 }
 main();

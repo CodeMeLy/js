@@ -3,4 +3,10 @@ export default class MyClass{
         console.log(`create instance using ${option} option.`);
         this.option = option;
     }
+    static MyStaticMethod(){
+        return 'hello';
+    }
+    static get MyStaticProperty(){
+        return 'goodbye';
+    }
 }
