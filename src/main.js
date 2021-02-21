@@ -1,5 +1,6 @@
-import MyClass from "./MyClass.js";
+import SubClass from "./SubClass.js";
 function main(){
-    const myclass = new MyClass("Student");
+    const subclass = new SubClass();
+    subclass.log();
 }
 main();
