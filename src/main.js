@@ -1,7 +1,10 @@
 import MyClass from "./MyClass.js";
 function main(){
-    const myClass = new MyClass("option");
-    myClass.name = "option2";
-    console.log(myClass.name);
+    const classIntance = new class{
+        get prop(){
+            return 5;
+        }
+    }
+    console.log(classIntance.prop);
 }
 main();
