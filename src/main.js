@@ -1,6 +1,8 @@
-import Something from './something.js';
+import Car from './Car.js';
+let METADATA = Symbol('metadata');
 function main(){
-    const something = new Something(3);
-    console.log(something.doSomething(4));
+    const mazda_mpv = new Car("Mazda","MPV");
+    console.log(mazda_mpv.add(3,4));
+    mazda_mpv.log();
 }
 main();
