@@ -1,8 +1,5 @@
-import Car from './Car.js';
-let METADATA = Symbol('metadata');
+import person from './Person.js';
 function main(){
-    const mazda_mpv = new Car("Mazda","MPV");
-    console.log(mazda_mpv.add(3,4));
-    mazda_mpv.log();
+    person.bio();
 }
 main();
