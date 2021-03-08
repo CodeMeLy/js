@@ -1,5 +1,12 @@
-import person from './Person.js';
+import callback from './callback.js';
 function main(){
-    person.bio();
+    callback('click',function (option){
+        if(option == 'click'){
+            console.log(" on click!");
+        }
+        else if(option == 'onload'){
+            console.log(" onload!");
+        }
+    })
 }
 main();
