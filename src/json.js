@@ -9,3 +9,17 @@ const date = JSON.parse(jsonString2,(key,value)=>{
     return key === "date"?(new Date(value)):value;
 })
 console.log(date);
+// chuyển qua json string
+const jsonString3 = JSON.stringify([{'name':1}]);
+console.log(jsonString3);
+// cắt json
+function replacer(key, value){
+    if(typeof value === 'string'){
+        return;
+    }
+    return value;
+}
+var foo = { foundation: "Mozilla", model: "box", week: 45, transport: "car", month: 7 }
+const data3 = JSON.stringify(foo,replacer);// lọc ra số
+console.log(data3);
+console.log(JSON.stringify(foo,["foundation"]));
